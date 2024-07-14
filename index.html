@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+<body >
+
+    <div class="header">
+        <p style="padding: 5px 20px;">Rental</p>
+        <p><i class="fa-solid fa-bars"></i></p>
+    </div>
+
+    <div class="flex container">
+
+        
+        <div class="overlay"></div>
+    <aside class="side-bar flex-col gap-[40px]">
+         <div class="rental pt-[10px] p-[20px]">
+            <h2 class="mb-[5px] text-[26px]">Rental from $99</h2>
+            <p>per night</p>
+            <i class="fa-solid fa-x"></i>
+         </div>
+         <div class="form p-[20px]">
+            <form action="" class="flex flex-col gap-[20px]">
+            <div>
+                <label for="checkin"><i class="fa-regular fa-calendar-check" style="color: #000000;"></i> Check in</label>
+                <input type="date" name="checkin" id="">
+            </div>
+            <div>
+                <label for="checkout"><i class="fa-regular fa-calendar" style="color: #000000;"></i> Check Out</label>
+                <input type="date" name="checkout" id="">
+            </div>
+            <div>
+                <label for="adults"><i class="fa-solid fa-person" style="color: #000000;"></i> Adults</label>
+                <input type="number" name="adults" value="1" id="">
+            </div>
+            <div>
+                <label for="kids"><i class="fa-solid fa-child-reaching" style="color: #000000;"></i> Kids</label>
+                <input type="number" name="kids" value="0" id="">
+            </div>
+            <div>
+                <button class="search"><i class="fa-solid fa-magnifying-glass me-[15px]"></i> Search availability</button>
+            </div>
+            </form>
+         </div>
+         <div class="list">
+            <ul class="flex flex-col">
+                <li><i class="fa-solid fa-building" style="color: #000000;"></i> Apartment</li>
+                <li><i class="fa-solid fa-signal text-[12px]" style="color: #000000;"></i> Subscribe</li>
+                <li><i class="fa-solid fa-envelope" style="color: #000000;"></i> Contact</li>
+            </ul>
+         </div>
+    </aside>
+    <main >
+        <div class="apartment">
+            <h1>The Apartment</h1>
+    <div style="position: relative;">
+        
+        <div class="living-room room">
+                <img src="./img/livingroom.jpg" alt="">
+            <div class="room-name">
+                <p>Living Room</p>
+            </div>
+        </div>
+
+        <div class="dining-room room">
+            <img src="./img/diningroom.jpg" alt="">
+            <div class="room-name">
+                <p>Dining Room</p>
+            </div>
+        </div>
+
+        <div class="bed-room room">
+            <img src="./img/bedroom.jpg" alt="">
+            <div class="room-name"> 
+                <p>Bedroom</p>
+            </div>
+        </div>
+
+        <div class="living-room-2 room">
+            <img src="./img/livingroom2.jpg" alt="">
+            <div class="room-name">
+                <p>Living Room II</p>
+            </div>
+        </div>
+
+            <!-- <div class="room-name">
+                <div class="living-room-name names">
+                    <p>Living Room</p>
+                </div>
+                <div class="dining-room-name names">
+                    <p>Dining Room</p>
+                </div>
+                <div class="bed-room-name names">
+                    <p>Bedroom</p>
+                </div>
+                <div class="living-room-2-name names">
+                    <p>Living Room II</p>
+                </div>
+            </div> -->
+
+    </div>
+            <div class="photos flex gap-[15px] mt-[25px]">
+                <img class="living-room-select room-select" src="./img/livingroom.jpg" alt="">
+                <img class="dining-room-select room-select" src="./img/diningroom.jpg" alt="">
+                <img class="bed-room-select room-select" src="./img/bedroom.jpg" alt="">
+                <img class="living-room-2-select room-select" src="./img/livingroom2.jpg" alt="">
+
+            </div>
+        </div>
+
+        <div class="space flex flex-col gap-[15px]">
+            <h2 class="mt-[25px] font-bold text-[23px]">The space</h2>
+            <div class="space-info flex lg:gap-[190px] md:gap-[100px] sm:gap-[70px]">
+                <p><i class="fa-solid fa-person" style="color: #000000;"></i> Max people: 4</p>
+                <p><i class="fa-regular fa-clock" style="color: #000000;"></i> Check In: After 3PM</p>
+            </div>
+            <div class="space-info flex lg:gap-[190px] md:gap-[100px] sm:gap-[70px]">
+                <p><i class="fa-solid fa-bath" style="color: #000000;"></i> Bathrooms: 2</p>
+                <p><i class="fa-regular fa-clock" style="color: #000000;"></i> Check Out: 12PM</p>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-bed" style="color: #000000;"></i> Bedrooms: 1</p>
+            </div>
+        </div>
+        <hr>
+
+        <h2 class="mt-[25px] mb-[25px] font-bold text-[23px]">Amenities</h2>
+        <div class="amenities flex flex-col gap-[15px]">
+            <div class="amenities-info flex lg:gap-[240px] md:gap-[150px] sm:gap-[120px]">
+                <p><i class="fa-solid fa-shower" style="color: #000000;"></i> Shower</p>
+                <p><i class="fa-solid fa-kitchen-set" style="color: #000000;"></i> Kitchen</p>
+            </div>
+            <div class="amenities-info flex lg:gap-[265px] md:gap-[175px] sm:gap-[145px]">
+                <p><i class="fa-solid fa-wifi" style="color: #000000;"></i> WiFi</p>
+                <p><i class="fa-solid fa-temperature-three-quarters" style="color: #000000;"></i> Heating</p>
+            </div>
+            <div class="amenities-info flex lg:gap-[273px] md:gap-[183px] sm:gap-[153px]">
+                <p><i class="fa-solid fa-tv" style="color: #000000;"></i> TV</p>
+                <p><i class="fa-brands fa-accessible-icon" style="color: #000000;"></i> Accessible</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="extra-info flex flex-col gap-[12px]  mb-[25px]">
+            <h2 class="mt-[25px] font-bold text-[23px]">Extra Info</h2>
+            <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>
+                We accept:
+                <i class="fa-solid fa-credit-card" style="color: #000000;"></i>
+                <i class="fa-brands fa-cc-mastercard" style="color: #000000;"></i>
+                <i class="fa-brands fa-cc-apple-pay" style="color: #000000;"></i>
+                <i class="fa-brands fa-cc-paypal" style="color: #000000;"></i>
+            </p>
+        </div>
+        <hr>
+
+        <div class="rules flex flex-col gap-[12px]">
+            <h2 class="mt-[25px] font-bold text-[23px]">Rules</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Subscribe to receive updates on available dates and special offers.</p>
+            <button class="subscribe">Subscribe</button>
+        </div>
+        <hr>
+
+        <div class="flex flex-col gap-[20px]">
+
+            <h2 class="text-[30px] mt-[25px]">Contact</h2>
+
+        <div class="flex flex-col gap-[2px]">
+            <p class="ms-[10px]"><i class="fa-solid fa-location-dot me-[15px]" style="color: #000000;"></i> Chicago, US</p>
+            <p class="ms-[10px]"><i class="fa-solid fa-phone me-[15px]" style="color: #000000;"></i> Phone: +00 151515</p>
+            <p class="ms-[10px]"><i class="fa-solid fa-envelope me-[15px]" style="color: #000000;"></i> Email: mail@mail.com</p>
+        </div>
+
+        <div class="flex flex-col gap-[15px]">
+            <p>Questions? Go ahead, ask them:</p>
+            <form action="" class="contact flex flex-col gap-[15px]">
+                <input type="text" name="" required  placeholder="Name" >
+                <input type="email" name="" required placeholder="Email">
+                <input type="text" name="" required  placeholder="Message">
+                <button class="send">Send a Message</button>
+            </form>
+        </div>
+        </div>
+    </main>
+</div>
+</body>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- JS -->
+    <script src="./main.js"></script>
+
+</html>

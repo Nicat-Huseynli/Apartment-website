@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.header{
+    display: none;
+}
+
+ul{
+    list-style: none;
+
+    li{
+        padding: 15px;
+    }
+
+    li:hover{
+        cursor: pointer;
+        background-color: #ccc;
+    }
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    position: relative;
+}
+
+.overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.586);
+}
+
+.container{
+    width: 60% !important; 
+    max-width: 1200px !important;
+    margin-inline: auto !important;
+}
+
+aside{
+    position: fixed;
+    display: flex;
+    background-color: #f1f1f1;
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+    width: 260px;
+    height: 100vh;
+    z-index: 100;
+}
+
+
+.rental{
+
+    h2{
+        width: 120px;
+    }
+
+
+    .fa-x{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 15px;
+        color: black;
+        display: none;
+    }
+
+    .fa-x:hover{
+        background-color: #ccc;
+    }
+}
+
+.form{
+
+    margin-top: -40px;
+
+    button{
+        color: white;
+        background-color: #4caf50;
+        border: none;
+        padding: 7px 25px;
+        font-size: 14px;
+    }
+
+    input{
+        width: 200px;
+        padding: 4px 12px; 
+        margin-top: 10px;
+        border: 1px solid #ccc;
+    }
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-right: 1px solid #ccc;
+    padding-inline: 15px;
+    left: 255px;
+    width: 700px;
+}
+
+
+.apartment{
+    h1{
+        color: #4caf50;
+        font-size: 30px;
+        padding-block: 10px;
+    }
+
+    .photos{
+
+        img{
+            width: 23.3%;
+            opacity: 0.6;
+        }
+
+        img:first-child{
+            opacity: 1;
+        }
+
+        img:hover{
+            cursor: pointer;
+            opacity: 1;
+        }
+    }
+
+}
+
+/* .living-room, */
+.dining-room,
+.bed-room,
+.living-room-2{
+    display: none;
+}
+
+.room-name{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 13px;
+    bottom: 15px;
+}
+
+.names{
+    display: none;
+}
+
+.space{
+    margin-bottom: 45px;
+    p{
+        font-size: 18px;
+    }
+}
+
+.amenities{
+    margin-bottom: 45px;
+    p{
+        font-size: 18px;
+    }
+}
+
+.subscribe,
+.send{
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    width: 33.33%;
+    padding: 0.5rem 1.6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.contact{
+    input{
+        width: 100%;
+        padding: 7px;
+        border: 1px solid #ccc;
+    }
+}
+
+button:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+input:hover{
+    cursor: text;
+}   
