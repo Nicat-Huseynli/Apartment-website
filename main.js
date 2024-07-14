@@ -36,22 +36,13 @@ const diningRoomSelect = document.querySelector(".dining-room-select")
 const bedRoomSelect = document.querySelector(".bed-room-select")
 const livingRoom2Select = document.querySelector(".living-room-2-select")
 
-
-// const names = document.querySelector(".names")
-// const livingRoomName = document.querySelector(".living-room-name")
-// const diningRoomName = document.querySelector(".dining-room-name")
-// const bedRoomName = document.querySelector(".bed-room-name")
-// const livingRoom2Name = document.querySelector(".living-room-2-name")
-
 roomSelects.forEach(select => select.addEventListener("click", function(){
     
     rooms.forEach(room => room.style.display="none" )
     roomSelects.forEach(selectedRoom => selectedRoom.style.opacity = 0.6)
-    // names.forEach(name => name.style.display = "none")
 
     if(select.classList.contains("living-room-select")){
         livingRoom.style.display = "block"
-        // livingRoomName.style.display = "block"
         livingRoomSelect.style.opacity = 1
     } else if(select.classList.contains("dining-room-select")){
         diningRoom.style.display = "block"
