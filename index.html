@@ -34,10 +34,12 @@
             <div>
                 <label for="checkin"><i class="fa-regular fa-calendar-check" style="color: #000000;"></i> Check in</label>
                 <input type="date" name="checkin" id="">
+                <p class="error check-error">This field is required</p>
             </div>
             <div>
                 <label for="checkout"><i class="fa-regular fa-calendar" style="color: #000000;"></i> Check Out</label>
                 <input type="date" name="checkout" id="">
+                <p class="error check-error">This field is required</p>
             </div>
             <div>
                 <label for="adults"><i class="fa-solid fa-person" style="color: #000000;"></i> Adults</label>
@@ -47,10 +49,10 @@
                 <label for="kids"><i class="fa-solid fa-child-reaching" style="color: #000000;"></i> Kids</label>
                 <input type="number" name="kids" value="0" id="">
             </div>
-            <div>
-                <button class="search"><i class="fa-solid fa-magnifying-glass me-[15px]"></i> Search availability</button>
+        </form>
+            <div class="mt-[25px]">
+                <button class="search" href="#"><i class="fa-solid fa-magnifying-glass me-[15px]"></i> Search availability</button>
             </div>
-            </form>
          </div>
          <div class="list">
             <ul class="flex flex-col">
@@ -92,21 +94,6 @@
                 <p>Living Room II</p>
             </div>
         </div>
-
-            <!-- <div class="room-name">
-                <div class="living-room-name names">
-                    <p>Living Room</p>
-                </div>
-                <div class="dining-room-name names">
-                    <p>Dining Room</p>
-                </div>
-                <div class="bed-room-name names">
-                    <p>Bedroom</p>
-                </div>
-                <div class="living-room-2-name names">
-                    <p>Living Room II</p>
-                </div>
-            </div> -->
 
     </div>
             <div class="photos flex gap-[15px] mt-[25px]">
@@ -168,9 +155,20 @@
             <h2 class="mt-[25px] font-bold text-[23px]">Rules</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p>Subscribe to receive updates on available dates and special offers.</p>
-            <button class="subscribe">Subscribe</button>
+            <button class="subscribe-btn">Subscribe</button>
         </div>
         <hr>
+
+        <div class="subscribe-overlay"></div>
+        <div class="subscribe-modal">
+                <h2>subscribe</h2>
+                <i class="fa-solid fa-x subscribe-close"></i>
+                <p>Join our mailing list to receive updates on available dates and special offers.</p>
+            <form action="">
+                <input type="email" name="" id="" required placeholder="Enter e-mail">
+                <button class="subscribe-btn modal-btn">Subscribe</button>
+            </form>
+        </div>
 
         <div class="flex flex-col gap-[20px]">
 
@@ -184,11 +182,14 @@
 
         <div class="flex flex-col gap-[15px]">
             <p>Questions? Go ahead, ask them:</p>
-            <form action="" class="contact flex flex-col gap-[15px]">
+            <form action="" class="contact flex flex-col gap-[7px]">
                 <input type="text" name="" required  placeholder="Name" >
+                <p class="error contact-error">This field is required</p>
                 <input type="email" name="" required placeholder="Email">
+                <p class="error contact-error">This field is required</p>
                 <input type="text" name="" required  placeholder="Message">
-                <button class="send">Send a Message</button>
+                <p class="error contact-error">This field is required</p>
+                <button class="send-btn">Send a Message</button>
             </form>
         </div>
         </div>

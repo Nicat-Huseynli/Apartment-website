@@ -56,3 +56,42 @@ roomSelects.forEach(select => select.addEventListener("click", function(){
     }
 }))
 
+
+// Modal window
+
+const subscribeBtn = document.querySelector(".subscribe-btn")
+const subscribeOverlay = document.querySelector(".subscribe-overlay")
+const subscribeModal = document.querySelector(".subscribe-modal")
+const subscribeClose = document.querySelector(".subscribe-close")
+
+subscribeBtn.addEventListener("click", function(){
+    subscribeOverlay.style.display = "block"
+    subscribeModal.style.display = "block"
+})
+
+subscribeClose.addEventListener("click", function(){
+    subscribeModal.style.display = "none"
+    subscribeOverlay.style.display = "none";
+})
+
+subscribeOverlay.addEventListener("click", function(){
+    subscribeModal.style.display = "none"
+    subscribeOverlay.style.display = "none"
+})
+
+// Error
+
+const checkError = document.querySelectorAll(".check-error")
+const searchBtn = document.querySelector(".search")
+
+const contactError = document.querySelectorAll(".contact-error")
+const sendBtn = document.querySelector(".send-btn") 
+
+searchBtn.addEventListener("click", function(){
+    checkError.forEach(check => check.style.display = "inline")
+})
+
+sendBtn.addEventListener("click", function(){
+    contactError.forEach(contact => contact.style.display = "inline")
+})
+
